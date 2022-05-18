@@ -1,22 +1,23 @@
-def googleColors(s):
-    """ Exercise function for print Google colors logo from an string """
+def googleColors(string):
+    """
+    Exercise function for print Google colors logo from an string
+    """
     vogal = "aeiouAEIOU"
-    str = ""
+    string_out = ""
     a = ""
-    for i in s:
+    for i in string:
         if i in vogal:
             if a in vogal:
-                str += "\033[33m" + i
+                string_out += "\033[33m" + i
             else:
-                str += "\033[31m" + i
+                string_out += "\033[31m" + i
         else:
             if a not in vogal and a != " ":
-                str += "\033[32m" + i
+                string_out += "\033[32m" + i
             else:
-                str += "\033[34m" + i
+                string_out += "\033[34m" + i
         a = i
-    print(str)
+    print(string_out)
 
 
-st = "Google feat Microsoft feat Yahooooooo!!!"
-googleColors(st)
+googleColors("Google feat Microsoft feat Yahooooooo!!!")
