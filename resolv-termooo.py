@@ -18,10 +18,10 @@ for i in termooo.words_used:
 
 def search_5():
     emmbed_dict = []
-    w_not = "umasenhv"
-    w_have = "trgoi"
-    w_local = "t...."
-    w_not_local = ".grr."
+    w_not = "turmslihdg"
+    w_have = "poea"
+    w_local = "....a"
+    w_not_local = "po.a."
 
     regex_not = "".join([f"(?!.*{x})" for x in w_not])
     regex_have = "".join([f"(?=.*{x})" for x in w_have])
